@@ -70,7 +70,13 @@ namespace ZarinpalRestApi.Models
                 /// Sample: A 36 character lenght string, starting with A, like: A00000000000000000000000000217885159
                 /// </summary>
                 public string Authority { get; set; }
+                /// <summary>
+                /// The person who pays for the commissions of the Zarinpal, Either the Payer (the one who pays) or the Payee (the one to whom money is paid to)
+                /// </summary>
                 public string FeeType { get; set; }
+                /// <summary>
+                /// The amount of Zarinpal commissions
+                /// </summary>
                 public decimal Fee { get; set; }
             }
 
@@ -124,7 +130,7 @@ namespace ZarinpalRestApi.Models
                 /// </summary>
                 public string CardHash { get; set; }
                 /// <summary>
-                /// The person who pays for the commissions of the Zarinpal, Either the Payer (the one who pays) or the Payee (the one to whom money is paid)
+                /// The person who pays for the commissions of the Zarinpal, Either the Payer (the one who pays) or the Payee (the one to whom money is paid to)
                 /// </summary>
                 public string FeeType { get; set; }
                 /// <summary>
